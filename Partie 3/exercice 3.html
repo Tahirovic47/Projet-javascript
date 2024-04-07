@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Deviner le nombre</h1>
+        <form id="numberGuessForm">
+            <strong>
+                <label for="guessInput">Enter a number:</label>
+            </strong>
+            <br><br>
+            <input type="text" id="guessInput" autocomplete="off">
+            <button type="button" id="guessButton">ok</button>
+            <br><br><br><br>
+            <div id="result">
+                <h2>Result:</h2>
+                <p id="answer"></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
+    <script>
+        var a = 50
+          var button = document.querySelector('button');
+          var p = document.querySelector('p');
+
+          button.addEventListener('click', comparaison);
+
+          function comparaison() {
+          var input = document.querySelector('input');
+         var valeur = parseInt(input.value);
+
+  if (valeur >= 0 && valeur <= 100) {
+    if (valeur === a) {
+      p.innerHTML = 'Bravo';
+    } else if (valeur > a) {
+      p.innerHTML = 'Trop grand';
+    } else {
+      p.innerHTML = 'Trop petit';
+    }
+  } else {
+    p.innerHTML = 'Entrez un nombre entre 0 et 100';
+  }
+}
+    </script>
+</body>
+</html>
