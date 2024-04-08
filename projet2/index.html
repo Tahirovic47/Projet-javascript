@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Afficher/Masquer</title>
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+    body {
+    background-image: url('./assets/imagebackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   </style>
+</head>
+<body>
+    <input type="checkbox" class="toggle" id="toggleElement1">
+    <label for="toggleElement1">Accueil</label>
+    <div class="content hidden">
+        <fieldset id="identite" class="hidden" style="display: inline-block; margin-right: 20px;">
+            <h2>bienvenue à notre page</h2>
+            <br>
+            <br>
+            <legend><h2>Votre identité</h2></legend>
+            <ol>
+                <input type="checkbox" class="toggle" id="toggleElement2">
+                <label for="toggleElement2">Créer un compte</label>
+                <div class="content hidden">
+                    <p>Nom <input type="text" name="nom" placeholder="Saisir votre nom"></p>
+                    <p>Prénom <input type="text" name="Prenom" maxlength="20" placeholder="Saisir votre prénom"></p>
+                    <p>Date de naissance <input type="date" name="date" maxlength="20"></p>
+                    <p>Adresse postale <input type="text" name="adresse postale" placeholder="votre adresse"></p>
+                    <p>Code postal <input type="text" name="Code postal" maxlength="20" placeholder="93000"></p>
+                    <p>Adresse électronique <input type="text" name="Adresse electronique" maxlength="20" placeholder="adresse électronique"></p>
+                    <p>Téléphone portable <input type="text" name="Telephone portable" maxlength="20" placeholder="+1 (xxx)xxx-xxxx"></p>
+                    <input type="submit" value="Envoyer">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </div>
+            </ol>
+        </fieldset>
+    </div>
+    <input type="checkbox" class="toggle" id="toggleElement3">
+    <label for="toggleElement3">Mon CV</label>
+    <div class="content hidden">
+        <fieldset id="identite" class="hidden" style="display: inline-block; margin-right: 20px;">
+            <legend><h2>Mon CV</h2></legend>
+            <ol>
+                <header>
+                    <section>
+                        <h1>AHMED BOUACHRA</h1>
+                        <p>19 ans</p>
+                        <p>Programmeur</p>
+                        <div>
+                            9993 Av de cobourg <br>
+                            saint Micheal H1H4W5<br>
+                            Tel : +1 (514)576-1564<br>
+                            Mel :<a href="mailto:adresse.electronique@example.com">xump420@gmail.com</a><br>
+                            Page Web :<a href="http://www.dev-teccart.ca/">http://www.dev-teccart.ca</a>
+                        </div>
+                    </section>
+                </header>
+                <article>
+                    <h2>Ma scolarité</h2>
+                    <section>
+                        <pre> 2023
+                           Baccalauréat 2e année Science Physique (lycée Mohammed IX, Casablanca) et 1er année science Math
+                          J'ai eu 14.63/20 comme note final  </pre>
+                    </section>
+                </article>
+                <article>
+                    <h2>Langues</h2>
+                    <dl>
+                        <dt>Français</dt>
+                        <dd>Langue maternelle</dd>
+                        <dt>Anglais</dt>
+                        <dd>Lu, écrit, parlé</dd>
+                    </dl>
+                </article>
+            </ol>
+        </fieldset>
+    </div>
+    <input type="checkbox" class="toggle" id="toggleElement4">
+    <label for="toggleElement4">Photo</label>
+    <div class="content hidden">
+        <fieldset id="identite" class="hidden" style="display: inline-block; margin-right: 20px;">
+            <legend><h2>Carte CB</h2></legend>
+            <ol>
+                <img src="./assets/imgCV.png">
+            </ol>
+        </fieldset>
+    </div>
+    <input type="checkbox" class="toggle" id="toggleElement5">
+    <label for="toggleElement5">Vidéo</label>
+    <div class="content hidden">
+        <fieldset>
+            <legend><h2>Vidéo</h2></legend>
+            <video id="videoPlayer" controls>
+                <source src="./assets/VIDEO-2024-04-07-21-43-07.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </fieldset>
+    </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
+
